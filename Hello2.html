@@ -2,27 +2,32 @@
 <html> 
   <head>
     <title>Hello World</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body style="background-color: rgb(0, 111, 148);"> 
-    <h1 style="font-size: 36px; display: inline;">Moje Portfolio</h1>
-    <a href="C:\projects\Hello World\subpg Moje Kurzy\subpg Moje Kurzy.html" style="font-size: 20px; display: inline; margin-left: 280px;">Moje Kurzy</a>
-    <br>
-    <br>
-    <br>
+  <body class="light-mode"> 
+    <button onclick="toggleMode()">
+      <img src="images/SecretButton.png" alt="Button" width="50" height="50">
+    <h1 style="font-size: 36px;">Moje Portfolio</h1>
     <br>
     <br>
     <h2 style="font-size: 25px;">Vítejte na mé webové stránce.</h2> 
     <p>Jmenuji se Ondřej Salavec a rozhodl jsem se, že se naučím programovat. Na internetu jsem našel stránku <a href="https://www.codecademy.com/learn">Codecademy.com</a>, kde je spousta prezentací, <a href="https://www.codecademy.com/catalog" target="_blank">kurzů</a>, projektů a různých materiálů od základů až po pokročilé programování.</p>
     <p>Konkrétně k tomuto úkolu jsem se dostal tak, že jsem si otevřel stránku s projekty a vybral tento, který zadává úkol vytvořit webovou stránku, konkrétně své osobní portfolio, kde bych mohl prezentovat své dovednosti a zkušenosti, které získám.</p>
     <p>Stránka vám dokonce po dokončení kurzu dá certifikát. Získané certifikáty si můžete stáhnout, nebo můžete svůj Codecademy profil propojit se službou LinkedIn a můžete své certifikáty sdílet přímo do svého LinkedIn životopisu.</p>
-    <br>
     <h3 style="font-size: 18px;">Můj LinkedIn profil</h3>
     <a href="https://www.linkedin.com/in/ond%C5%99ej-salavec-73baa3346/" target="_blank">
       <img src="images/linkedin2.png" alt="LinkedIn Profil" width="100" height="100">
     </a>
     <h3 style="font-size: 18px;">Můj Cocademy profil</h3>
     <a href="https://www.codecademy.com/profiles/code7918555515" target="_blank">
-      <img src="images\channels4_profile.jpg" alt="Codecademy Profil" width="100" height="100">
+      <img src="images/cocademy.jpg" alt="Codecademy Profil" width="100" height="100">
     </a>
+    <script>
+      function toggleMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        element.classList.toggle("light-mode");
+      }
+    </script>
   </body>
 </html>
